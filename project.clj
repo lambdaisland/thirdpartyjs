@@ -2,7 +2,8 @@
   :license {:name "Mozilla Public License 2.0" :url "https://www.mozilla.org/en-US/MPL/2.0/"}
 
   :dependencies [[org.clojure/clojure "1.8.0"]
-                 [org.clojure/clojurescript "1.9.229"]]
+                 [org.clojure/clojurescript "1.9.229"]
+                 [cljsjs/d3 "4.2.2-0"]]
 
   :source-paths ["src/clj"]
 
