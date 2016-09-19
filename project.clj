@@ -17,7 +17,10 @@
                                 :output-to "resources/public/js/compiled/thirdpartyjs.js"
                                 :output-dir "resources/public/js/compiled/dev"
                                 :asset-path "js/compiled/dev"
-                                :source-map-timestamp true}}
+                                :source-map-timestamp true
+                                :foreign-libs [{:file "d3-es6.js"
+                                                :provides ["js.d3"]
+                                                :module-type :es6}]}}
 
                :prod {:source-paths ["src/cljs"]
                       :jar true
@@ -27,4 +30,7 @@
                                  :source-map "resources/public/js/compiled/thirdpartyjs.js.map"
                                  :output-dir "resources/public/js/compiled/prod"
                                  :source-map-timestamp true
-                                 :pretty-print false}}}})
+                                 :pretty-print false
+                                 :foreign-libs [{:file "d3.js"
+                                                 :provides ["js.d3"]
+                                                 :module-type :es6}]}}}})
