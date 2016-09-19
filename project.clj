@@ -17,7 +17,8 @@
                                 :output-to "resources/public/js/compiled/thirdpartyjs.js"
                                 :output-dir "resources/public/js/compiled/dev"
                                 :asset-path "js/compiled/dev"
-                                :source-map-timestamp true}}
+                                :source-map-timestamp true
+                                :externs ["d3-externs.js"]}}
 
                :prod {:source-paths ["src/cljs"]
                       :jar true
@@ -27,4 +28,5 @@
                                  :source-map "resources/public/js/compiled/thirdpartyjs.js.map"
                                  :output-dir "resources/public/js/compiled/prod"
                                  :source-map-timestamp true
-                                 :pretty-print false}}}})
+                                 :pretty-print false
+                                 :externs ["d3-externs.js"]}}}})
