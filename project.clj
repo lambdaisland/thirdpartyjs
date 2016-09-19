@@ -18,6 +18,8 @@
                                 :output-dir "resources/public/js/compiled/dev"
                                 :asset-path "js/compiled/dev"
                                 :source-map-timestamp true
+                                :foreign-libs [{:file "d3.js"
+                                                :provides ["js.d3"]}]
                                 :externs ["d3-externs.js"]}}
 
                :prod {:source-paths ["src/cljs"]
@@ -29,4 +31,6 @@
                                  :output-dir "resources/public/js/compiled/prod"
                                  :source-map-timestamp true
                                  :pretty-print false
+                                 :foreign-libs [{:file "d3.js"
+                                                 :provides ["js.d3"]}]
                                  :externs ["d3-externs.js"]}}}})

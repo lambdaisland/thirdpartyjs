@@ -1,4 +1,5 @@
-(ns thirdpartyjs.core)
+(ns thirdpartyjs.core
+  (:require [js.d3]))
 
 (enable-console-print!)
 
