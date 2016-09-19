@@ -3,8 +3,8 @@
 A demonstration of the various ways to consume a third party library from
 ClojureScript.
 
-For the full background on these approaches, watch out for the upcoming Lambda
-Island episode, "Using JavaScript libraries from ClojureScript".
+For the full background on these approaches, watch out for the upcoming [Lambda
+Island](https://lambdaisland.com) episode, "Using JavaScript libraries from ClojureScript".
 
 ## Usage
 
